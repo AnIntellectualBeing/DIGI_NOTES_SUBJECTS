@@ -1,0 +1,204 @@
+SHORT_CUTS
+9
+16
+17
+
+1.OHA 
+
+	Open Handset Alliance
+	combination of 84 compaies such as Google samsung AKM Intel Ebay etc
+	established on 5th Nov 2007 led by Google
+	Comitted to advance open standasrds provide servies and devploy  handset using the android platform
+____________________________________________________________________________________________________________________
+2.SDK
+___________________________________________________________________________________________________________________
+3.ANDROID ARCHITCTURE
+         _________________________________________________
+        |                    APPLICATIONS                |
+        |                                                | 
+	|          Home Contacts Phone Browser ..        | 
+	|                                                |
+	|________________________________________________| 
+	|            APPLICATION FRAMEWORK               |
+	|                                                |  
+        |                                                |
+	|     Activity Manager   Recource Manager        |
+	|     Package Manager    View System             |
+	|     Telephony Manager  Location Manager        |
+	|     Window Manager     Notification Manager    |
+	|     Content Providers  XMPP Service            |   
+	|________________________________________________|  
+	|           LIBRARIES          __________________|
+        |                              | ANDROID RUNTIME |
+	|     Surface Manager          |                 |
+	|     Media Framework  WebKit  | Core Libraries  |
+	|     SQLlite          SGL     |                 |
+	|     OpenGLIES        SSL     | Dalvik Virtual  | 
+	|     FreeType         Libc    |     Machine     |
+	|                              |_________________|
+        |________________________________________________|
+        |                LINUX KERNEL                    |
+        |                                                |
+	|     Display Driver       WiFi Driver           |  
+	|     USB Driver           Bluetooth Driver      |  
+	|     Camera Driver        Flash Memory Driver   | 
+	|     Keypad Driver        Binder(IPC) Driver    |
+	|     Audio Driver         Power Management      | 
+	|________________________________________________|
+
+___________________________________________________________________________________________
+
+
+               
+4.AVD
+______________________________________________________________________________________________________________________________________________________________________________________
+5.AVD VS EMULATOR
+
+AVD
+
+	Definition: AVD stands for Android Virtual Device. It refers to the configuration 	ettings that define the characteristics of an Android device for the purpose of 	unning Android apps. AVD is essentially a virtual device configuration.
+
+	Configuration: AVD allows developers to create customized virtual devices by 	pecifying parameters such as Android version, device type, screen size, RAM, 	torage, and hardware features. These configurations define how the virtual device 	ill behave.
+
+	Android Studio Integration: AVD is directly integrated into Android Studio, the 	fficial IDE for Android development. Developers can create, manage, and run AVDs 	eamlessly within Android Studio.
+
+	Purpose: AVD is specifically designed for Android app testing and development. It 	rovides a way for developers to test their applications on virtual Android devices 	ithout the need for physical hardware.
+
+	Specific to Android: AVD is focused solely on emulating Android devices and does 	ot extend to emulating other operating systems or platforms.
+___________________________________________________________________________________________________________________
+6.DOWNLOADING JDK & ANDRIOD STUDIO
+___________________________________________________________________________________________________________________
+7.HISTORY OF ANDROID
+    Founder: Andy Rubin , Rich Miner , Chris White and Nick Sears
+    Developed : Pal Alto , Californiia , US , Oct 2003
+    Purpose : origanally intended for camera but shifter to smrtphone later coz of low market for camera
+    Google : 2005, 5th Nov 2007  announched for Development , 17 Aug 2005 bought by google
+    HTC -> first android 2008
+___________________________________________________________________________________________________________________
+
+8. APP COMPONENTS
+ 	Each Component has a distinct lifecycle that defines hwo the components are created and destroyed
+
+	Activity: is a java Class in Android which has some predefine functions which
+ 	are triggered at different app states which are overrid to perform anything we want.
+
+        Act class provioed us with empty functions sllowing us to be controlled of everything.
+
+	There can be multiple activities in android but there can only be one main activity.
+  	Execution starts from onCreate()
+
+	Service: is a component that runs in the background to perform long-running operations 
+	to interract with the user adn it works even if application is destroyed.
+	A service can essentially take two states:
+		1.Started : A service is started whena an application component such as an activity starts by calling startService().
+		Once started a service can tun in the background indefinitely even if the component that started it is destroyed 
+		it is stopped by stopService() the service can stop itself by calling the stopSelf().
+	
+		2.Bound : A sevice is bound when an application component like client binds to it by calling bindService()
+		A bound service offers a client-server interface that allows components to interact with the service, send
+		requests, get results,and even do so across processes with interprocess communication (IPC)
+		the client can unbund the service by calling the unbindService()
+	
+	Broadcast Recivers:Broadcast Recivers simply respond to broadcast messagfes from other applications or from the system itself
+	The messages are sometime called events or intents.
+	ex : application can also initiate broadcasts to let otgher applications know that some data 
+	has ben dowloaded to the dewvcice adn is avaliable for them to use so this is broadcast reciver
+	 who will intercept thsi commincation and will initaite appropriate action.
+
+	Applications can register for various ystem evnets like boot complete or battery low and 
+	android system sends broadcast when specific event occurs
+	any app can create its own custom broadcassts
+	work for system broadcasted intents
+		Creating the Broadcast reciver
+		Registering Broadcast Reciver
+
+
+	Content Provider: A content provider component supplies data from one aplciation to others on request	
+	Such reqs are handeled by the method od ContentResolver class
+	A content provider can use different ways to store its data and the datat can be srtroed in a database in files o even over a network
+	Content providers let you centralize conetent in one place and have many different applciatiosn acces it as needed.
+	A content provider beahves very much like a databse when you can quwery it edit its contetn as well as add or delet
+	 conetn using insert(), update(), delete() and query()
+	in most cases this data is stored in an SQLite database
+	A content provider is implememnted as a subclass of ContentProvider class and must impolement a standart set of APIs
+	 that enable other applications to perform transactions
+
+9. LIFE CYCLE OF AN ACTIVITY
+
+****SHORT_CUT***
+CSR PSR D
+	7 methods of android.app.Activity class
+	Activity is the sub class of ContectThemeWrapper
+	with help of activity can put all ui elements in a single screen
+	
+	7 LifeCycle methods in Android
+	onCreate():called when act first created
+
+	onStart(): called wehn activity is becoming visible to the user
+	onResume():called when activity will start interacting with the user
+	onPause():The paused activity does not receive user input and cannot 
+	          execute any code and called when the current activity is being paused 
+		  and the previous activity is being resumed.
+	onStop():called when activity is no longer visible to the user
+	onRestart():called after your activity is stopped, prior to start
+	onDestroy(): called before the activity is destroyed
+
+10.INTENT : TYPES
+11.DVM : DVM VS JVM 
+12.DDMS 
+13. TYPES OF APPS
+14. XML 
+15. DEX COMPILER
+16. DIFFERENT STATES OF APPS
+***SHORTCUT***
+ APSD
+
+    ACTIVE :When a user clicks on the app icon the main acvtivty
+            gets staretd and its creates the app , app user intefrace using 
+	    layout xml and the app or acrivity start runing
+            and it said to be active state
+
+    PAUSE : When you press back buton in yout app and the 
+            diaglouge box pop ups for asking if you want to
+            quit or not that state is said to be paused state
+
+     STOP : When we press the home button while usign the app 
+            app doesnt chose it jus gets minized the state of
+            the app is sadi to be in stop state
+
+   DESTROY : When we fianlly destiry the app when we completly 
+             close it it is said to be in destroyed state
+
+17. EVENT LISTENER :
+
+***** SHORT_CUT : CLF TMKC ***** 
+
+EVENT HANDLER  		 EVENT LISTENER
+
+onClick()      		 OnClickListener()
+
+onLongClick() 		 OnLongClickListener()
+
+onFocusChange() 	 OnFocusChangeListener()
+
+onKey()      		 OnKeyListener()
+
+onTouch()  		 OnTouchListener()
+
+onMenuItemClick() 	 OnMenuItemClickListener()
+ 
+onCreateContextMenu()  	 onCreateContextMenuItemListener()
+
+
+18.NATIVE VS HYBRID
+19. 
+
+
+CODING : 
+FORM 
+VOWEL 
+ODD OR EVEN 
+
+github : https://github.com/AnIntellectualBeing
+@anintellectualbeing on instagram
+https://www.youtube.com/@AnIntellectualBeing
