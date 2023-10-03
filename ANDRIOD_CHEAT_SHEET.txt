@@ -1,0 +1,156 @@
+SHORT_CUTS
+9
+16
+17
+
+1.OHA 
+
+	Open Handset Alliance
+	combination of 84 compaies such as Google samsung AKM Intel Ebay etc
+	established on 5th Nov 2007 led by Google
+	Comitted to advance open standasrds provide servies and devploy  handset using the android platform
+2.SDK
+3.ANDROID ARCHITCTURE
+         _________________________________________________
+        |                    APPLICATIONS                |
+        |                                                | 
+	|          Home Contacts Phone Browser ..        | 
+	|                                                |
+	|________________________________________________| 
+	|            APPLICATION FRAMEWORK               |
+	|                                                |  
+        |                                                |
+	|     Activity Manager   Recource Manager        |
+	|     Package Manager    View System             |
+	|     Telephony Manager  Location Manager        |
+	|     Window Manager     Notification Manager    |
+	|     Content Providers  XMPP Service            |   
+	|________________________________________________|  
+	|           LIBRARIES          __________________|
+        |                              | ANDROID RUNTIME |
+	|     Surface Manager          |                 |
+	|     Media Framework  WebKit  | Core Libraries  |
+	|     SQLlite          SGL     |                 |
+	|     OpenGLIES        SSL     | Dalvik Virtual  | 
+	|     FreeType         Libc    |     Machine     |
+	|                              |_________________|
+        |________________________________________________|
+        |                      LINUX KERNEL              |
+        |                                                |
+	|     Display Driver       WiFi Driver           |  
+	|     USB Driver           Bluetooth Driver      |  
+	|     Camera Driver        Flash Memory Driver   | 
+	|     Keypad Driver        Binder(IPC) Driver    |
+	|     Audio Driver         Power Management      | 
+	|________________________________________________|
+
+
+
+
+               
+4.AVD
+5.AVD VS EMULATOR
+6.DOWNLOADING JDK & ANDRIOD STUDIO
+7.HISTORY OF ANDROID
+    Founder: Andy Rubin , Rich Miner , Chris White and Nick Sears
+    Developed : Pal Alto , Californiia , US , Oct 2003
+    Purpose : origanally intended for camera but shifter to smrtphone later coz of low market for camera
+    Google : 2005, 5th Nov 2007  announched for Development , 17 Aug 2005 bought by google
+    HTC -> first android 2008
+
+8. APP COMPONENTS
+ 	Each Component has a distinct lifecycle that defines hwo the components are created and destroyed
+___________________________________________________________________________________________
+	Activity: is a java Class in Android which has some predefine functions which
+ 	are triggered at different app states which are overrid to perform anything we want.
+
+        Act class provioed us with empty functions sllowing us to be controlled of everything.
+
+	There can be multiple activities in android but there can only be one main activity.
+  	Execution starts from onCreate()
+_________________________________________________________________________________________
+	Service: is a component that runs in the background to perform long-running operations to interract with the user adn it works even if application is destroyed
+	
+	
+	Broadcast Recivers:
+
+	Content Provider:
+9. LIFE CYCLE OF AN ACTIVITY
+
+****SHORT_CUT***
+CSR PSR D
+	7 methods of android.app.Activity class
+	Activity is the sub class of ContectThemeWrapper
+	with help of activity can put all ui elements in a single screen
+	
+	7 LifeCycle methods in Android
+	onCreate():called when act first created
+
+	onStart(): called wehn activity is becoming visible to the user
+	onResume():called when activity will start interacting with the user
+	onPause():The paused activity does not receive user input and cannot 
+	          execute any code and called when the current activity is being paused 
+		  and the previous activity is being resumed.
+	onStop():called when activity is no longer visible to the user
+	onRestart():called after your activity is stopped, prior to start
+	onDestroy(): called before the activity is destroyed
+
+10.INTENT : TYPES
+11.DVM : DVM VS JVM 
+12.DDMS 
+13. TYPES OF APPS
+14. XML 
+15. DEX COMPILER
+16. DIFFERENT STATES OF APPS
+***SHORTCUT***
+ APSD
+
+    ACTIVE :When a user clicks on the app icon the main acvtivty
+            gets staretd and its creates the app , app user intefrace using 
+	    layout xml and the app or acrivity start runing
+            and it said to be active state
+
+    PAUSE : When you press back buton in yout app and the 
+            diaglouge box pop ups for asking if you want to
+            quit or not that state is said to be paused state
+
+     STOP : When we press the home button while usign the app 
+            app doesnt chose it jus gets minized the state of
+            the app is sadi to be in stop state
+
+   DESTROY : When we fianlly destiry the app when we completly 
+             close it it is said to be in destroyed state
+
+17. EVENT LISTENER :
+
+***** SHORT_CUT : CLF TMKC ***** 
+
+EVENT HANDLER  		 EVENT LISTENER
+
+onClick()      		 OnClickListener()
+
+onLongClick() 		 OnLongClickListener()
+
+onFocusChange() 	 OnFocusChangeListener()
+
+onKey()      		 OnKeyListener()
+
+onTouch()  		 OnTouchListener()
+
+onMenuItemClick() 	 OnMenuItemClickListener()
+ 
+onCreateContextMenu()  	 onCreateContextMenuItemListener()
+
+
+18.NATIVE VS HYBRID
+19. 
+
+
+CODING : 
+FORM 
+VOWEL 
+ODD OR EVEN 
+
+github : https://github.com/AnIntellectualBeing
+@anintellectualbeing on instagram
+https://www.youtube.com/@AnIntellectualBeing
