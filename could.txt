@@ -1,0 +1,93 @@
+CHaracterisitics of CLoud COmputing
+
+Advantages and Dis CLoud COmputing
+
+Service MOdel 
+_________________________________________________________________________________________
+##############
+IAAS : BRON VS
+Resource Management: Control over virtualized servers, storage, and networking components.
+
+On-Demand Services: Pay-as-you-go model; resources can be provisioned and de-provisioned as needed.
+
+Virtualization: Utilizes virtual machines and hypervisors for efficient resource utilization.
+
+Network Connectivity: Configurable network options including firewalls, load balancers, and IP addresses.
+
+Security: Users are responsible for securing their virtual servers and applications.
+
+Backup and Recovery: Users need to implement their backup and recovery solutions.
+
+Examples: AWS EC2, Azure Virtual Machines, Google Compute Engine.
+
+#############
+PAAS : ADD CIA
+
+Application Hosting: Platform provides a framework for hosting applications.
+
+Database Services: Managed database services for easier data storage and retrieval.
+
+Development Frameworks: Supports multiple programming languages and frameworks.
+
+Auto-Scaling: Automatically scales the application based on demand.
+
+Collaboration: Facilitates team collaboration and development.
+
+Integrated Tools: Offers integrated development and deployment tools.
+
+Examples: Google App Engine, Microsoft Azure App Services, Red Hat OpenShift.
+
+#############
+SAAS : MCU DUI
+
+Instant Accessibility: Access applications instantly via a web browser, no installation required.
+
+Multi-Tenancy: One instance of the software serves multiple users (tenants).
+
+Updates and Maintenance: Provider manages software updates, patches, and maintenance.
+
+Data Security: Provider ensures data security and compliance with industry standards.
+
+Collaboration Features: Often includes collaboration tools like shared calendars and document editing.
+
+User Support: Provides customer support and troubleshooting services.
+
+Examples: Salesforce, Microsoft Office 365, Dropbox Business.
+
+managed by and managed by cloud
+ 
+
+_____________________________________________________________
+Iaas vs Paas vs Saas Vs On-Premise
+
+ADR MOV SSN
+______________________________________________________________________
+NIST CC Serivce models
+
+Cloud storage 
+
+NIST CC DEplyment model
+
+Private cloud adv and dis
+
+Diff public vs private
+
+DIff public vs Community
+
+History of CC
+
+NIST CC MODEL
+
+Application and use of CC
+
+Lib -> CC
+
+Uni -> CC
+DIss deployment and service models
+
+PVt cloud:
+ CEC SC HC
+Public cloud:
+ OMG RICA
+Comm Cloud:
+ SC3 RDJ
